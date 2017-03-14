@@ -1,14 +1,14 @@
 import sbt.Keys._
 
-scalaVersion := "2.12.1"
+scalaVersion := "2.12.2"
 
-crossScalaVersions := Seq("2.11.8", "2.12.1")
+crossScalaVersions := Seq("2.11.8", "2.12.2")
 
 def BaseProject(name: String): Project =
   Project(name, file(name))
     .settings(
       organization := "com.zoepepper",
-      version := "1.0.7",
+      version := "1.0.7-ant8e",
       scalacOptions ++= Seq("-deprecation", "-feature", "-Xfatal-warnings"),
       homepage := Some(url("https://github.com/zoepepper/scalajs-jsjoda")),
       licenses +=("BSD 3-Clause", url("http://opensource.org/licenses/BSD-3-Clause")),
